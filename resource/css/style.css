@@ -1,0 +1,342 @@
+a{text-decoration: none;}
+
+ul,li{list-style: none;}
+
+input,h1,body, html, a, ul, li, div,p{
+    margin: 0;
+    padding: 0;
+}
+
+button,input{
+    outline: none;
+    border: none;
+}
+
+body, html{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    min-height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix{clear: both}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background: url("../images/background.jpg") no-repeat fixed center;
+    background-origin: border-box;
+}
+
+.menu{
+    position: relative;
+    background: #3e3c3c;
+    width: 100%;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu>ul{
+    display: flex;
+    height: 50px;
+}
+
+.menu>ul:last-child{
+    position: absolute;
+    right: 50px;
+}
+
+.menu>ul:last-child a{
+    color: #fff;
+    padding: 7px 17px;
+    border-radius: 20px;
+    border: 3px solid #ff7070;
+}
+
+.menu>ul:last-child a:hover{
+    color: #FFF;
+    background: #ff7070;
+}
+
+.menu>ul>li{
+    margin-left: 15px;
+}
+
+.menu>ul:first-child>li>a{
+    display: block;
+    line-height: 47px;
+    color: #fff;
+}
+
+.menu>ul:first-child>li>a:hover{
+    color: #ff7070;
+    border-bottom: 3px solid #ff7070 ;
+}
+
+/*==============================================
+=====================ВХОД=======================
+==============================================*/
+
+
+/*==================Оберкка формы================*/
+
+#wrapper_form{
+
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+
+    justify-content: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: center;
+    -ms-flex-pack: justify;
+
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+
+    width: 95%;
+    margin: 0px auto;
+    height: 100%;
+}
+
+/*==================Форма================*/
+
+#form{
+    width: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    background: #585858;
+    margin: 10px 0;
+}
+
+/*==================ЛОГО САЙТА================*/
+
+.logo_login {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+
+    justify-content: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: center;
+    -ms-flex-pack: justify;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+
+    height: 200px;
+}
+
+.img_logo{
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    background: #ff7070;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+}
+
+.img_logo img{
+    width: 100%;
+    height: auto;
+}
+
+/*==================ЗАГАЛОВОК================*/
+
+.header{
+    text-align: center;
+    color: #fff;
+}
+
+/*==================СТИЛИЗАЦИЯ INPUT================*/
+
+
+
+
+.input{
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: center;
+    -ms-flex-pack: justify;
+    margin-top: 10px;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+.input>p{
+    display: block;
+    margin: 0;
+    padding: 0;
+    min-height: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: red;
+}
+
+.noscript{
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border-left: 20px solid #ff7070; ;
+}
+
+.input input{
+    color: #ff7070;
+    width: 60%;
+    padding: 0px 10px;
+    height: 40px;
+    text-align: left;
+    background: #404040;
+}
+
+.captcha input::placeholder, .input input::placeholder{
+    color: #ff7070;
+}
+
+
+
+.ramember_btn{
+    position: relative;
+    margin-top: 15px;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    width: 100%;
+    background: #404040
+}
+
+.ramember_btn:before{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 5px;
+    top: -15px;
+    margin-left: 60px;
+    border: 10px solid #404040;
+    border-top: 0px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+}
+
+
+.btn_login{
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    width: 100px;
+    line-height: 40px;
+    margin-left: 30px;
+    background: #ff7070;
+    border-radius: 10px;
+    -weblit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn_login:hover{
+    background: #ff7070;
+}
+
+/*==================СТИЛИЗАЦИЯ ДОПОЛНИТЕЛЬНЫХ ССЫЛОК================*/
+
+.dop_a{
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+.ramember_btn a, .dop_a a{
+    margin-left: 5px;
+    color: #ff7070;
+}
+
+.ramember_btn a:hover, .dop_a a:hover{
+    color: #ff7070;
+}
+
+/*==============================================
+=====================РЕГИСТРАЦИЯ================
+==============================================*/
+
+.header_register{
+    font-size: 20px;
+    line-height: 50px;
+    background: #484848;
+}
+
+
+
+
+.btn_reg{
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+
+    justify-content: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: center;
+    -ms-flex-pack: justify;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    text-align: center;
+    padding: 20px 0px
+}
+
+.btn_reg input{
+    width: 200px;
+    padding: 10px 20px;
+}
+
+/*============Пользователь вошел================*/
+
+.menu ul>li.user{
+    color: #fff;
+    padding: 0px 17px;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    top: 7px;
+    line-height: 32px;
+    height: 32px;
+    border: 3px solid #ff7070;
+}

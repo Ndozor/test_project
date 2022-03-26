@@ -1,0 +1,13 @@
+[
+    {
+        "kolread": 2,
+        "date_of_birth": "23.03.2022",
+        "city": "rechiza"
+    },
+    {
+        "login": "login",
+        "name": "$name",
+        "password": "$password",
+        "email": "$email"
+    }
+]

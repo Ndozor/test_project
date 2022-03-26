@@ -1,0 +1,25 @@
+[
+    {
+        "kolread": 3,
+        "date_of_birth": "23.03.2022",
+        "city": "rechiza"
+    },
+    {
+        "login": "neodozor",
+        "name": "FD",
+        "password": "d7e339a0d91c34c51eba773e7e1cd1b2",
+        "email": "neodozor@gmail.com"
+    },
+    {
+        "login": "neodozor1",
+        "name": "fd",
+        "password": "2224c5f1e425d8cf4f434351acce4aac",
+        "email": "neodozor@gmail.com"
+    },
+    {
+        "login": "neodozor12",
+        "name": "fd",
+        "password": "2224c5f1e425d8cf4f434351acce4aac",
+        "email": "nedsdas@gai.com"
+    }
+]
