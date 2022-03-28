@@ -12,7 +12,8 @@ if (isset($_POST['name'])) { $name=$_POST['name']; if ($name =='') { unset($name
 //заносим введенный пользователем пароль в переменную $password, если он пустой, то уничтожаем переменную
 if (empty($login) or empty($password) or empty($rpassword) or empty($email) or empty($name)) //если пользователь не ввел логин или пароль, то выдаем ошибку и останавливаем скрипт
 {
-    exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!");
+    $flag = false;
+    error('input','Вы ввели не всю информацию, вернитесь назад и заполните все поля!');
 }
 //если логин и пароль введены,то обрабатываем их, чтобы теги и скрипты не работали, мало ли что люди могут ввести
 $login = stripslashes($login);
@@ -37,16 +38,17 @@ $name = trim($name);
 $res = file_get_contents('../bd2.json');
 $data = json_decode($res, true);
 
-for($i=0;$i<count($data); $i++){
-    if ($login == $data[$i]['login']){
-        error('login','Такой логин уже занят');
-        $flag =false;
-    }
-}
+
 
 
 
 if ($flag ==true){
+    for($i=0;$i<count($data); $i++){
+        if ($login == $data[$i]['login']){
+            error('login','Такой логин уже занят');
+            $flag =false;
+        }
+    }
     if(strlen($login)>5) {
         if ($password == $rpassword) {
             if( preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{6,}/', $password)) {

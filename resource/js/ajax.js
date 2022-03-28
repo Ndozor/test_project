@@ -34,6 +34,9 @@ $(document).on("click",'#btn_reg',function (){
             var mas = data.split('-');
             $('.input p').html('')
             switch (mas[0]) {
+                case 'input':
+                    alert(mas[1]);
+                    break;
                 case 'login':
                     $(".login_error").append(mas[1]);
                     break;
